@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>abc</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div class="header">
+  <p id="siteName">UnitedLoL</p>
+</div>
+
+<div class="landing">
+  <h1 class="title">Looking for other players to play LoL with?</h1>
+  <h3 class="title smallTitle">Fast and easy to use tool, without registration</h3>
+  <div class="btnCont">
+    <button class="btn" id="findg">Find a group</button>
+    <button class="btn" id="haveg">I have a group</button>
+  </div>
+  
+  <div class="appArea">
+    
+    <div class="findGroup">
+      <h2>Summoner Name:</h2>
+      <input type="text" name="name" id="nameInput"/>
+      <select id="region" name="region">
+        <option>EUW</option>
+        <option>NA</option>
+        <option>EUNE</option>
+        <option>KR</option>
+      </select>
+      <button class="btn selectBtn" id="find">Find</button>
+    </div>
+    
+    <div class="haveGroup">
+      <h2>How many players are you looking for?</h2>
+      <button class="btn selectBtn num" id="1">1</button>
+      <button class="btn selectBtn num" id="2">2</button>
+      <button class="btn selectBtn num" id="3">3</button> 
+    </div>
+    
+    <div>
+      <div class="searching">
+        <h2>Looking for <span id="mode"></span></h2>
+        <div class="loader"></div>
+      </div>
+
+      <div class="data">
+        <p id="alert"></p>
+
+      </div>
+
+    </div>
+    
+  </div>
+  
+</div>
+
+<div class="footer">
+  <p class="contact">Problems? Feedback? <br> Contact at info@unitedlol.com</p>
+</div>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js" ></script>
+<script type="text/javascript" src="index.js" ></script>
+</body>
+</html>
